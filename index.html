@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodlinfo Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-and-controls">
+            <h1>HODLINFO</h1>
+            <div class="currency-selector">
+                <button>INR</button>
+                <button>BTC</button>
+                <button>BUY BTC</button>
+            </div>
+            <div class="connect-telegram">
+                <button class="telegram-btn">Connect Telegram</button>
+            </div>
+        </div>
+        <!-- Make the stats section a single line -->
+        <div class="stats">
+            <div>
+                <h2>0.1 %</h2>
+                <p>5 Mins</p>
+            </div>
+            <div>
+                <h2>0.96 %</h2>
+                <p>1 Hour</p>
+            </div>
+            <div class="best-price">
+                <h2>Best Price to Trade</h2>
+                <h3 id="best-price">₹ Loading...</h3>
+                <p>Average BTC/INR net price including commission</p>
+            </div>
+            <div>
+                <h2>2.73 %</h2>
+                <p>1 Day</p>
+            </div>
+            <div>
+                <h2>7.51 %</h2>
+                <p>7 Days</p>
+            </div>
+        </div>
+      
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Difference</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody id="crypto-data">
+                <!-- Dynamic data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <button class="add-to-home">Add hodlinfo to home screen</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
